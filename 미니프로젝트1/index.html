@@ -47,8 +47,41 @@
     <div class="container">
         <h1 class="display-2 mb-4 aos-init aos-animate" data-aos="fade-up">어렵게 운동하지 마세요</h1>
         <p clas="lead mb-5 aos-init aos-animate" data-aos="=fade-up" data-aos-delay="100">팀스마트 헬스장에서 생각없이 운동하세요.</p>
-        <a href="#contact" class="btn btn-light btn-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-            사전 예약하기</a>
+        <!-- <a href="#contact" class="btn btn-light btn-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            사전 예약하기</a> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            사전 예약하기
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">예약하기</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form data-aos="fade-up" class="aos-init aos-animate">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="이름" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="이메일" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="문의" required></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">보내기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -91,7 +124,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 aos-init aos-animate" data-aos="fade-right">
-                <h2>팀스마트가 궁금하세요?</h2>
+                <h1>팀스마트가 궁금하세요?</h1>
                 <p>팀스마트는 2021년도에 트레이너, 물리치료사들을 교육하는 협회에서 시작되었습니다. 체형의 건강을 근본적으로 해결하기 위한 극 효율적인, 극 효과적인, 극 섬세한 운동들만
                     연구합니다.
                 </p>
@@ -181,31 +214,6 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
-
-<!-- <div>
-    <h1>고객들의 이야기</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nVi3jItGUUU?si=nv-5d-FnQJ5qGv29"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RXz9ILOgvVI?si=dyvNpwhx0Tayn9Uc"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/2OxpOxKw7qY?si=zOqdpwR-uaRD_QdX"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div> -->
 
 <!-- 문의하기 섹션 -->
 <selection id="contact" class="section">
