@@ -54,8 +54,10 @@ console.log("🚀 ~ messageEL:", messageEL);
 
 messageEL.addEventListener("change", handleInputChange);
 
-// const data = {
-//   name: '조재원',
-//   number: '01028556265',
-//   message: '메시지'
-// }
+const urlParams = new URL(location.href).searchParams;
+const data = {
+  name: urlParams.get('name'),
+  number: urlParams.get('number'),
+  message: urlParams.get('message')
+}
+console.log(data)
