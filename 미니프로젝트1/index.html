@@ -68,7 +68,7 @@
                                 <input type="text" class="form-control" placeholder="이름" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="이메일" required>
+                                <input type="text" class="form-control" placeholder="전화번호" required>
                             </div>
                             <div class="mb-3">
                                 <textarea class="form-control" rows="5" placeholder="문의" required></textarea>
@@ -146,9 +146,37 @@
         <h2 class="mb-4 aos-init aos-animate" data-aos="=fade-up">
             건강에 대한 걱정 없앨 준비 되셨나요?
         </h2>
-        <a href="#contact" class="btn btn-light btn-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             사전 예약하기
-        </a>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">예약하기</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form data-aos="fade-up" class="aos-init aos-animate">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="이름" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="전화번호" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="문의" required></textarea>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                                <button type="submit" class="btn btn-primary">보내기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -226,7 +254,7 @@
                         <input type="text" class="form-control" placeholder="이름" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="이메일" required>
+                        <input type="text" class="form-control" placeholder="전화번호" required>
                     </div>
                     <div class="mb-3">
                         <textarea class="form-control" rows="5" placeholder="문의" required></textarea>
