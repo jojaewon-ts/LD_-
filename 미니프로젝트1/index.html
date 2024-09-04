@@ -65,17 +65,18 @@
                     <div class="modal-body">
                         <form data-aos="fade-up" class="aos-init aos-animate">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="이름" required>
+                                <input name="name" type="text" class="form-control" placeholder="이름" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="전화번호" required>
+                                <input name="number" type="text" class="form-control" placeholder="전화번호" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="문의" required></textarea>
+                                <textarea name="message" class="form-control" rows="5" placeholder="문의"
+                                    required></textarea>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-                                <button type="submit" class="btn btn-primary">보내기</button>
+                                <button id="Btn1st" type="submit" class="btn btn-primary">보내기</button>
                             </div>
                         </form>
                     </div>
@@ -275,11 +276,12 @@
     </div>
 </footer>
 
-<script src="index.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
 </body>
 
 </html>
